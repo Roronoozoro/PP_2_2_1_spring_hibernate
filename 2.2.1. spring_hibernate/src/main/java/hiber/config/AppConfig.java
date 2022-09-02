@@ -23,6 +23,8 @@ import java.util.Properties;
 @EnableTransactionManagement
 @ComponentScan(value = "hiber")
 public class AppConfig {
+   //Пометил анотацией @Autowired конструкторы , а не поля
+   //Действительно, через поля не рекомендуеться, даже сама идея это говорит, как сам не заметил)
    @Autowired
    public AppConfig(Environment env) {
       this.env = env;
