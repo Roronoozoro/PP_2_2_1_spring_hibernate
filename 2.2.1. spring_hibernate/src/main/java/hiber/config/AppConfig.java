@@ -24,13 +24,11 @@ import java.util.Properties;
 @ComponentScan(value = "hiber")
 public class AppConfig {
 
+    private Environment env;
 
     public AppConfig(Environment env) {
         this.env = env;
     }
-
-
-    private Environment env;
 
 
     @Bean
